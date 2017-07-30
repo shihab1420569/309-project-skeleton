@@ -12,6 +12,8 @@ module.exports = function(app){
 	
 app.route('/products/new')
 	.get(products.new);
+	app.route('/products/: productId')
+	.get(products.new);
 	
 
   app.route('/api/products/:productId')
